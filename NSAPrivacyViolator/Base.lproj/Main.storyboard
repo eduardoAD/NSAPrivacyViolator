@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gj9-zf-tvW">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dear Citizen-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,105 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vn-SY-1QK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTe-G0-Lxu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="What?! No!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startViolatingPrivacy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oTd-G1-bdT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-7w-bJs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Umm.....Okay">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startViolatingPrivacy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="081-Qh-knk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eRd-7w-bJs" firstAttribute="centerY" secondItem="0Vn-SY-1QK" secondAttribute="centerY" id="GNE-8j-3rl"/>
+                            <constraint firstAttribute="centerX" secondItem="eRd-7w-bJs" secondAttribute="centerX" id="Msb-hR-7qX"/>
+                            <constraint firstItem="RTe-G0-Lxu" firstAttribute="top" secondItem="eRd-7w-bJs" secondAttribute="bottom" constant="31" id="Qrd-Yh-o5j"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0Vn-SY-1QK" secondAttribute="bottom" id="R0f-Du-9Jj"/>
+                            <constraint firstItem="0Vn-SY-1QK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="VRM-d6-viF"/>
+                            <constraint firstAttribute="centerX" secondItem="RTe-G0-Lxu" secondAttribute="centerX" id="XcW-Po-33l"/>
+                            <constraint firstAttribute="trailing" secondItem="0Vn-SY-1QK" secondAttribute="trailing" id="YM0-5i-VFy"/>
+                            <constraint firstItem="0Vn-SY-1QK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="lC7-L0-KAS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0Vn-SY-1QK"/>
+                                <exclude reference="RTe-G0-Lxu"/>
+                                <exclude reference="eRd-7w-bJs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="VRM-d6-viF"/>
+                                <exclude reference="YM0-5i-VFy"/>
+                                <exclude reference="lC7-L0-KAS"/>
+                                <exclude reference="GNE-8j-3rl"/>
+                                <exclude reference="Msb-hR-7qX"/>
+                                <exclude reference="Qrd-Yh-o5j"/>
+                                <exclude reference="XcW-Po-33l"/>
+                                <exclude reference="R0f-Du-9Jj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0Vn-SY-1QK"/>
+                                <include reference="RTe-G0-Lxu"/>
+                                <include reference="eRd-7w-bJs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="VRM-d6-viF"/>
+                                <include reference="YM0-5i-VFy"/>
+                                <include reference="lC7-L0-KAS"/>
+                                <include reference="GNE-8j-3rl"/>
+                                <include reference="Msb-hR-7qX"/>
+                                <include reference="Qrd-Yh-o5j"/>
+                                <include reference="XcW-Po-33l"/>
+                                <include reference="R0f-Du-9Jj"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Dear Citizen" id="glb-c8-VqR"/>
+                    <connections>
+                        <outlet property="myTextView" destination="0Vn-SY-1QK" id="3gG-8a-Vuz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1095" y="1041"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ulq-AC-M1c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gj9-zf-tvW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k5y-98-Uni">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="nxy-eO-nJe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYc-H3-ejU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="1041"/>
         </scene>
     </scenes>
 </document>
